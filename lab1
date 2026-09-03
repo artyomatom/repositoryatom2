@@ -1,0 +1,29 @@
+# макс колво кнопок для одного игрока
+
+k = int(input("Введите максимальное количество нажимаемых кнопок"))
+
+max_keys = k * 2
+
+# создаю словарь для подсчета количесва встречаемых цифр
+
+counts = {str(i): 0 for i in range(1, 10)}
+
+# считваем 4 строки поля 4х4
+
+for _ in range(4):
+    row = input()
+    for char in row:
+        if char != '.'
+            counts[char] += 1
+score  = 0
+
+# проверка каждой цифры
+
+for i in range (1, 10):
+    digit = str(i)
+    # если цифра есть на поле и игроки могут нажать
+    if counts[digit] > 0 and counts[digit] <= max_keys
+        score += 1
+
+print(score)
+
