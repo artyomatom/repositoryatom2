@@ -3,7 +3,7 @@ def two_sum_wsort(numbers, k):
     numbers.sort()
 
     left = 0
-    right = len(n) - 1
+    right = len(numbers) - 1 # ошибка была в том, что я неправильно задал переменную
 
     while left < right:
         current_sum = numbers[left] + numbers[right]
@@ -17,11 +17,11 @@ def two_sum_wsort(numbers, k):
 
 n = int(input())
 numbers = list(map(int, input().split()))
-k = int(input("Загадайте число"))
+k = int(input())
 
 result = two_sum_wsort(numbers, k)
 if result:
     print(result[0], result[1])
 else:
-    print("нет")
+    print()
 
